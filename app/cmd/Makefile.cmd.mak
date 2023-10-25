@@ -8,10 +8,14 @@ GBUILD_G = build_g
 GTARGET = $(GBIN)/rdv_rpi.exe
 #================================================
 GINCS =\
+	-I/usr/include \
 	-I/usr/local/include \
+	-I/usr/include/libxml2 \
 	
 GLIBS =\
+    -L/usr/lib \
     -L/usr/local/lib \
+    -lxml2 -lb64 \
 	
 GOBJS =\
     $(patsubst $(GSRC)/%.cpp, $(GBUILD)/%.o, $(wildcard $(GSRC)/*.cpp)) \

@@ -1,8 +1,12 @@
 //===============================================
-#include <iostream>
+#include "GProcess.h"
 //===============================================
 int main(int _argc, char** _argv) {
-	printf("Bonjour tout le monde.\n");
-	return 0;
+    GProcess lProcess;
+    lProcess.init();
+    lProcess.run(_argc, _argv);
+    lProcess.clean();
+    lProcess.getLogs().print();
+    return 0;
 }
 //===============================================
