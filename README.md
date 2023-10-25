@@ -1,2 +1,2 @@
 # ReadyRaspberryPi
-Plateforme de création d'un système embarqué en C/C++ avec le RaspberryPi.
+Tutoriel de création d'un système embarqué en C++ avec le RaspberryPi.
