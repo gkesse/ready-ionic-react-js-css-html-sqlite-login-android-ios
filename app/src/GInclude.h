@@ -27,9 +27,6 @@
 #include <libxml/parser.h>
 #include <libxml/tree.h>
 #include <libxml/xpath.h>
-// base64
-#include <b64/encode.h>
-#include <b64/decode.h>
 //===============================================
 typedef unsigned char uchar;
 //===============================================

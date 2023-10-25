@@ -1,5 +1,6 @@
 //===============================================
 #include "GString.h"
+#include "GBase64.h"
 //===============================================
 GString* GString::m_instance = 0;
 //===============================================
@@ -164,20 +165,12 @@ std::vector<char> GString::toVChar() const {
 //===============================================
 GString GString::toBase64() const {
     if(isEmpty()) return "";
-    base64::encoder lBase64;
-    char* lBuffer;
-    lBase64.encode(m_data, m_size, lBuffer);
-    GString lData(lBuffer);
-    return lData;
+    return GBase64::encode((uchar*)m_data, m_size);
 }
 //===============================================
 GString GString::fromBase64() const {
     if(isEmpty()) return "";
-    base64::decoder lBase64;
-    char* lBuffer;
-    lBase64.decode(m_data, m_size, lBuffer);
-    GString lData(lBuffer);
-    return lData;
+    return GBase64::decode(m_data);
 }
 //===============================================
 void GString::print() const {
