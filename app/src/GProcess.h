@@ -10,8 +10,8 @@ public:
     ~GProcess();
     void init();
     void clean();
-    void run(int _argc, char** _argv);
-    void runTest(int _argc, char** _argv);
+    void run(int _argc, char** _argv, char** _envs);
+    void runTest(int _argc, char** _argv, char** _envs);
 };
 //===============================================
 #endif
