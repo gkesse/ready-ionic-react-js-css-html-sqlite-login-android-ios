@@ -13,6 +13,7 @@ public:
     void runBase64(int _argc, char** _argv, char** _envs);
     void runSleep(int _argc, char** _argv, char** _envs);
     void runEnvs(int _argc, char** _argv, char** _envs);
+    void runGpio(int _argc, char** _argv, char** _envs);
 };
 //===============================================
 #endif

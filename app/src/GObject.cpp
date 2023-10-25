@@ -50,7 +50,7 @@ GString GObject::getPath(const GString& _path) const {
 }
 //===============================================
 bool GObject::isTestEnv() const {
-    GString lEnv = getEnv("GPROJECT_ENV");
+    GString lEnv = getEnv("ENV_TYPE");
     if(lEnv == "TEST") return true;
     return false;
 }
