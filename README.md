@@ -1,2 +1,2 @@
-# ReadyTest
-Bibliothèque de tests pour le développement de logiciels applicatifs
+# ReadyRaspberryPi
+Plateforme de création d'un système embarqué en C/C++ avec le RaspberryPi.
