@@ -66,7 +66,7 @@ void GTest::runEnvs(int _argc, char** _argv, char** _envs) {
         }
     }
     else if(lAction == "1") {
-        printf("%s\n", *getenv("ENV_TYPE"));
+        printf("%s\n", getenv("ENV_TYPE"));
     }
 }
 //===============================================
