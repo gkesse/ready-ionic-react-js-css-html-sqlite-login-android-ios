@@ -15,7 +15,7 @@ GINCS =\
 GLIBS =\
     -L/usr/lib \
     -L/usr/local/lib \
-    -lxml2 -lb64 \
+    -lxml2 \
 	
 GOBJS =\
     $(patsubst $(GSRC)/%.cpp, $(GBUILD)/%.o, $(wildcard $(GSRC)/*.cpp)) \
